@@ -6,7 +6,6 @@ class DepartamentoDAO:
     
     @staticmethod
     def _fila_a_departamento(fila: tuple) -> Departamento:
-        """Helper interno encapsulado para reconstruir objetos Departamento desde registros SQL"""
         if not fila:
             return None
         nombre, gerente_id = fila

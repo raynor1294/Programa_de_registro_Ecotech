@@ -5,7 +5,6 @@ class ProyectoDAO:
     
     @staticmethod
     def _fila_a_proyecto(fila: tuple) -> Proyecto:
-        """Helper interno encapsulado para reconstruir objetos Proyecto desde registros SQL"""
         if not fila:
             return None
         nombre, descripcion = fila

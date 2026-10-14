@@ -2,7 +2,6 @@ from dependencia.empleado import Empleado
 from dependencia.proyecto import Proyecto
 
 class RegistroTrabajo:
-    """Clase intermedia que materializa la relación con información propia de EcoTech"""
     def __init__(self, fecha: str, horas: float, descripcion: str, empleado: Empleado, proyecto: Proyecto):
         self.id_registro = None  # Se asignará al guardar en la Base de Datos
         self.fecha = fecha

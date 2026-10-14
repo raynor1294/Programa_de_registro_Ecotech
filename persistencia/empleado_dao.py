@@ -5,7 +5,6 @@ class EmpleadoDAO:
     
     @staticmethod
     def _fila_a_empleado(fila: tuple) -> Empleado:
-        """Helper interno encapsulado para reconstruir objetos desde registros de la BD"""
         if not fila:
             return None
         id_emp, nombre, email, tipo, metrica_pago = fila

@@ -3,7 +3,6 @@ from persistencia.departamento_dao import DepartamentoDAO
 from persistencia.empleado_dao import EmpleadoDAO
 
 def solicitar_opcion_depto() -> int:
-    """Implementa Validación + Excepción simultáneamente (Clase 7 y 8)"""
     while True:
         try:
             opcion = int(input("Seleccione una opción de departamentos: "))

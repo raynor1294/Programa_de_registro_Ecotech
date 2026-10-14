@@ -5,7 +5,6 @@ from persistencia.registro_trabajo_dao import RegistroTrabajoDAO
 from persistencia.proyecto_dao import ProyectoDAO
 
 def solicitar_opcion_empleado() -> int:
-    """Implementa Validación + Excepción simultáneamente tal como pide la Clase 7"""
     while True:
         try:
             opcion = int(input("Seleccione una opción: "))
